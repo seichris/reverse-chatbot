@@ -1,3 +1,38 @@
+### Objetcive of this project
+
+We want to build a Telegram bot that uses a GPT API to generate responses to incoming messages. The bot should be able to read incoming messages, generate responses using the GPT API, and send those responses back to the users who sent the original messages. Additionally, the bot should allow users to provide context for the responses by sending a message to the GPT API provider, and it should keep track of the messages that it has responded to and display them in a web app.
+
+This bot will work in the background and does not require an invitation to a chat.
+
+To achieve this, we will use GramJS to read incoming messages and send responses, and we will select a GPT API provider to generate responses. We will also build a web app using JavaScript and possibly a web framework like React, as well as a database like MongoDB or Firebase to store messages and manage the bot's state.
+
+The web app should allow users to log in to their Telegram account, provide any necessary information to the bot, and control the bot's behavior. Specifically, the web app should allow users to pause and start the bot for individual channels, and toggle between auto-answering mode and manual mode, where the bot proposes a response in the UI and lets the user send it.
+
+### Tech stack
+
+1. TG API credentials
+2. GPT API credentials
+3. React web app in this repo
+4. GramJS (https://github.com/gram-js/gramjs):
+
+Webapp features:
+
+- GramJS to authenticate the user and begin listening for incoming messages 
+- GramJS event listener for incoming messages
+- GramJS to generate responses using the GPT API. sendMessage method
+
+- **Display answered messages**: Keep track of the messages that your bot has responded to and display them in your web app. You can use a database like MongoDB or Firebase to store the messages and retrieve them for display.
+![image](https://user-images.githubusercontent.com/25006584/226182890-64e47115-bb24-4e80-ac0b-6af9d0690324.png)
+
+- **Allow users to provide an initial prompt**: Build a text input field where users can enter a message that will be sent to the GPT API. For example “Answer in a friendly way” or “answer in Chinese”. Allow our users to group each chat by keyword. So they can provide this context message once, to make it work for a few different chats.
+![image](https://user-images.githubusercontent.com/25006584/226182843-ffb9046e-528c-48f8-9bec-08fa71e200a3.png)
+
+- **Toggle auto-answering mode or manual mode per individual channel**: Build a feature into your web app that allows users to toggle between auto-answering mode and manual mode. In auto-answering mode, the bot will generate and send responses automatically, while in manual mode, the bot will propose a response in the UI and let the user send it. You can do this by storing the mode state for each channel in your database and checking this state when incoming messages are received.
+![image](https://user-images.githubusercontent.com/25006584/226182869-90b96eba-18a6-47e2-893e-aeba3c7c6951.png)
+
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
