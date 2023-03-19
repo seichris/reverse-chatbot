@@ -1,4 +1,4 @@
-### Objetcive of this project
+### Objective of this project
 
 We want to build a Telegram bot that uses a GPT API to generate responses to incoming messages. The bot should be able to read incoming messages, generate responses using the GPT API, and send those responses back to the users who sent the original messages. Additionally, the bot should allow users to provide context for the responses by sending a message to the GPT API provider, and it should keep track of the messages that it has responded to and display them in a web app.
 
