@@ -15,13 +15,13 @@ The web app should allow users to log in to their Telegram account, provide any 
 3. React web app in this repo
 4. GramJS (https://github.com/gram-js/gramjs):
 
-Webapp features:
+I already built the UI in this repository. The Webapp should have these features:
 
 - GramJS to authenticate the user and begin listening for incoming messages 
 - GramJS event listener for incoming messages
 - GramJS to generate responses using the GPT API. sendMessage method
 
-- **Display answered messages**: Keep track of the messages that your bot has responded to and display them in your web app. You can use a database like MongoDB or Firebase to store the messages and retrieve them for display.
+- **Display chats with history of messages**: Keep track of the messages that your bot has responded to and display them in your web app. You can use a database like MongoDB or Firebase to store the messages and retrieve them for display.
 ![image](https://user-images.githubusercontent.com/25006584/226182890-64e47115-bb24-4e80-ac0b-6af9d0690324.png)
 
 - **Allow users to provide an initial prompt**: Build a text input field where users can enter a message that will be sent to the GPT API. For example “Answer in a friendly way” or “answer in Chinese”. Allow our users to group each chat by keyword. So they can provide this context message once, to make it work for a few different chats.
