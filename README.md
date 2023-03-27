@@ -1,6 +1,6 @@
 ### Objective of this project
 
-We want to build a (**GramJS**) Telegram server that reads incoming messages, and uses a **GPT API** to generate responses. A **React web app** should give the user an overview of incoming and outgoing / proposed messages.
+We want to build a (**GramJS**) Telegram server that reads incoming messages, and uses a **GPT API** to generate responses. A **React or Nextjs web app** should give the user an overview of incoming and outgoing / proposed messages.
 
 The **web app (React)** should allow users to log in to their Telegram account
 The web app should allow users to switch between auto-message-mode and manual mode settings.
