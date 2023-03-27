@@ -1,12 +1,18 @@
 ### Objective of this project
 
-We want to build a Telegram bot that uses a GPT API to generate responses to incoming messages. The bot should be able to read incoming messages, generate responses using the GPT API, and send those responses back to the users who sent the original messages. Additionally, the bot should allow users to provide context for the responses by sending a message to the GPT API provider, and it should keep track of the messages that it has responded to and display them in a web app.
+We want to build a (**GramJS**) Telegram server that reads incoming messages, and uses a **GPT API** to generate responses. A **React web app** should give the user an overview of incoming and outgoing / proposed messages.
 
-This bot will work in the background and does not require an invitation to a chat.
+The **web app (React)** should allow users to log in to their Telegram account
+The web app should allow users to switch between auto-message-mode and manual mode settings.
+The web app should allow users to pause and start the bot for individual channels
+The web app should allow users to provide context for the responses by sending additional instruction messages to the GPT API provider.
+The web app should allow users to add / remove individual chats to groups. These groups share the same instruction message.
 
-To achieve this, we will use GramJS to read incoming messages and send responses, and we will select a GPT API provider to generate responses. We will also build a web app using JavaScript and possibly a web framework like React, as well as a database like MongoDB or Firebase to store messages and manage the bot's state.
+To achieve this, we will use **GramJS** to read message history, incoming messages and send responses.
+This service will work in the background and does not require an invitation to a chat.
+Which means we will use **gramJS** with a user account, not a bot account.
 
-The web app should allow users to log in to their Telegram account, provide any necessary information to the bot, and control the bot's behavior. Specifically, the web app should allow users to pause and start the bot for individual channels, and toggle between auto-answering mode and manual mode, where the bot proposes a response in the UI and lets the user send it.
+And we will query **GPT API** send texts and receive responses. We might need a database like **MongoDB** or Firebase to store messages and manage the bot's state. And in that database, each Telegram chat will have one corresponding GPT history.
 
 ### Tech stack
 
